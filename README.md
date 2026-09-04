@@ -1,63 +1,96 @@
 # 🏦 Bank Management System in C
 
-A console-based Bank Management System developed in C as a programming fundamentals project.
-This project was created to practice core C programming concepts such as structures, functions, pointers, file handling, input validation, and working with multiple source and header files.
+A console-based Bank Management System developed in **C** as a programming project to practice core C programming concepts, modular programming, structures, pointers, file handling, validation, and Git/GitHub.
+
+---
 
 ## 📌 About the Project
 
-The Bank Management System allows users to manage basic customer and bank account information through a command-line interface.
-The project uses file handling to store customer and account records so that the data can be accessed again when the program is run.
-This is a beginner-level project developed as part of my learning journey in Computer Science and C programming.
-## ✨ Features
+The Bank Management System is a menu-driven console application that allows users to manage basic banking information.
+
+The project is divided into separate modules for:
+
+- 👤 Customer Management
+- 💳 Account Management
+- 💰 Transaction Management
+
+Each major module contains its own **header (`.h`) and source (`.c`) files**, making the project more organized and easier to maintain.
+
+The system uses **file handling** to store and retrieve data so that information can persist between program executions.
+
+---
+
+## 🚀 Features
+
+### 👤 Customer Management
+
 - Create a new customer
-- Generate unique customer IDs
+- Generate a unique Customer ID
 - Store customer information
-- Search for a customer by ID
-- Create bank accounts
-- Generate account numbers
-- Store account information
-- Validate customer input
-- Validate phone numbers
-- Validate email addresses
-- Validate CNIC format
-- Store data using files
-- Manage customer and account records
-### Programming Language
-- C
-### Concepts Practiced
-- Variables and data types
-- Conditional statements
-- Loops
-- Functions
+- Search for customers by Customer ID
+- Validate customer information
+- Store customer records in a data file
+
+### 💳 Account Management
+
+- Create a bank account
+- Generate a unique Account Number
+- Associate an account with a customer
+- Support different account types
+- Store account balance
+- Maintain account status
+- Set account password
+- Store account information in a data file
+
+### 💰 Transaction Management
+
+- Perform banking transactions
+- Manage account balance
+- Support deposit operations
+- Support withdrawal operations
+- Validate transaction-related input
+- Maintain transaction information
+
+---
+
+## 🛠️ Technologies & Concepts Used
+
+The project is developed using:
+
+- **C Programming Language**
 - Structures (`struct`)
+- Functions
 - Pointers
 - Arrays
 - Strings
-- File handling
-- Input validation
-- Header files
-- Multiple source files
-- Preprocessor macros
+- File Handling
+- Header Files
+- Multiple Source Files
+- Preprocessor Macros
+- Input Validation
+- Modular Programming
+
+---
+
 ## 📂 Project Structure
-Bank-Management-System-C/
+
+```text
+Bank-Management-System/
 │
 ├── main.c
+│
 ├── customer.c
 ├── customer.h
+│
 ├── account.c
 ├── account.h
+│
 ├── transaction.c
 ├── transaction.h
+│
+├── README.md
 ├── .gitignore
-└── README.md
-project
-🚀 Future Improvements
-Some features I plan to improve or add in the future include:
-* Deposit and withdrawal functionality
-* Money transfer between accounts
-* Transaction history
-* Better date validation
-* Improved account authentication
-* More robust error handling
-* Improved user interface
-* Additional account management features
+│
+├── customers.dat
+├── accounts.dat
+└── transactions.dat
